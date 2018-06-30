@@ -29,11 +29,11 @@ page 123456702 "CSD Seminar List"
                 {
                 }
                 field("Minimum Participants";
-                "Minimum Partcipants")
+                "Minimum Participants")
                 {
                 }
                 field("Maximum Participants";
-                "Maximum Partcipants")
+                "Maximum Participants")
                 {
                 }
             }
@@ -57,9 +57,9 @@ page 123456702 "CSD Seminar List"
             {
                 action("Co&mments")
                 {
-                //    RunObject=page "Seminar Comment sheet";
-                //    RunPageLink + "TableName"=const(Seminar), "No."=field("No.");
-                //    Image = Comment;
+                    RunObject=page "CSD Seminar Comment sheet";
+                    RunPageLink = "Table Name"=const(Seminar), "No."=field("No.");
+                    Image = Comment;
                 }
             }
         }

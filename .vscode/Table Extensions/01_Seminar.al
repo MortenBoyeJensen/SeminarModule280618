@@ -45,17 +45,17 @@ table 123456701 "CSD Seminar"
             Caption = 'Seminar Duration';
             DecimalPlaces = 0 : 1;
         }
-        field(40; "Minimum Partcipants"; Integer)
+        field(40; "Minimum Participants"; Integer)
         {
-            Caption = 'Minimum Partcipants';
+            Caption = 'Minimum Participants';
         }
-        field(50; "Maximum Partcipants"; Integer)
+        field(50; "Maximum Participants"; Integer)
         {
-            Caption = 'Maximum Partcipants';
+            Caption = 'Maximum Participants';
         }
         field(60; "Search Name"; Code[50])
         {
-            Caption = 'Serarc Name';
+            Caption = 'Search Name';
         }
         field(70; "Blocked"; Boolean)
         {
@@ -92,12 +92,12 @@ table 123456701 "CSD Seminar"
 
                      if GenProdPostingGroup.ValidateVatProdPostingGroup
                         (GenProdPostingGroup,"Gen. Prod. Posting Group") then
-                        Validate("VAT Prod Posting Group",
+                        Validate("VAT Prod. Posting Group",
                         GenProdPostingGroup."Def. VAT Prod. Posting Group");
                      end;   
             end;
         }
-        field(120; "VAT Prod Posting Group"; Code[10])
+        field(120; "VAT Prod. Posting Group"; Code[10])
         {
             Caption = 'VAT Product Posting Group';
             TableRelation="VAT Product Posting Group";
@@ -130,7 +130,7 @@ Seminar : Record "CSD Seminar";
 GenProdPostingGroup: Record "Gen. Product Posting Group";
 SeminarSetup:Record "CSD Seminar Setup";
 
-//CommentLine: record "CSD Seminar Comment Line";
+CommentLine: record "CSD Seminar Comment Line";
 
 NoSeriesMgt :Codeunit NoSeriesManagement;
 

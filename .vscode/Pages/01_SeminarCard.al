@@ -31,11 +31,11 @@ page 123456701 "CSD Seminar Card"
                 {
                 }
                 field("Minimum Participants";
-                "Maximum Partcipants")
+                "Maximum Participants")
                 {
                 }
                 field("Maximum Participants";
-                "Maximum Partcipants")
+                "Maximum Participants")
                 {
                 }
                 field(Blocked; Blocked)
@@ -53,7 +53,7 @@ page 123456701 "CSD Seminar Card"
                 {
                 }
                 field("VAT Prod. Posting Group";
-                "VAT Prod Posting Group")
+                "VAT Prod. Posting Group")
                 {
                 }
                 field("Seminar Price"; "Seminar Price")
@@ -86,8 +86,8 @@ page 123456701 "CSD Seminar Card"
                 }
                 action("CO&mments")
                 {
-                  //  RunObject = page //"Seminar Comment Sheet";
-                  //  RunPageLink = "TableName"=const(Seminar), "No."=field("No.");
+                    RunObject = page "CSD Seminar Comment Sheet";
+                    RunPageLink = "Table Name"=const(Seminar), "No."=field("No.");
                     Image = Comment;
                     Promoted = true;
                     PromotedIsBig = true;
